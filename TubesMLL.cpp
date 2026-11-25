@@ -1,10 +1,10 @@
 #include <iostream>
+#include <string>
 #include "TubesMLL.h"
 using namespace std;
 
 void createListCoach(ListCoach &L){
     L.first == nullptr;
-    L.last == nullptr;
 }
 
 bool isEmptyCoach(ListCoach L){
@@ -12,10 +12,10 @@ bool isEmptyCoach(ListCoach L){
 }
 
 bool isEmptyAtlet(adrCoach L){
-    return P->firstAtlet == nullptr;
+    return L->firstAtlet == nullptr;
 }
 
-//buat elemen
+// Membuat elemen
 adrCoach createElemenCoach(Coach data) {
     adrCoach P = new elmCoach;
     P->info = data;
